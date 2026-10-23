@@ -89,6 +89,8 @@ cd ..\client
 npm run build
 ```
 
+`npm run test:curl` performs a demo reset as part of its lifecycle checks, so do not run it between rehearsal and the pitch. Reset once on stage with the manager-only **Reset demo data** button.
+
 The server smoke test covers QR/public order access, invalid tokens, complaint submission, role enforcement, assignment, multipart proof upload, verification, closing, customer status changes, and manager demo reset.
 
 ## Main API endpoints
@@ -116,4 +118,3 @@ The server smoke test covers QR/public order access, invalid tokens, complaint s
 - Authentication is demo-level JWT role switching, not full identity management.
 - The prototype runs locally on SQLite. PostgreSQL is planned for production.
 - Storage values are currently exposed for the demo monitor; production workflows should add stronger inventory controls.
-
