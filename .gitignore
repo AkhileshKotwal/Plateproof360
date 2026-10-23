@@ -1,0 +1,7 @@
+node_modules/
+.env
+client/dist/
+server/coverage/
+server/db/plateproof.db
+server/uploads/
+server/qr-test.png

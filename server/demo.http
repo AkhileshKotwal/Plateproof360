@@ -1,0 +1,23 @@
+### Health
+GET http://localhost:4000/health
+
+### Dishes
+GET http://localhost:4000/api/dishes
+
+### Create order (replace dish_id if needed)
+POST http://localhost:4000/api/orders
+Content-Type: application/json
+
+{
+  "dish_id": 1,
+  "cook_temp_c": 75,
+  "cook_time_min": 20,
+  "hygiene_ok": true
+}
+
+### Recent orders
+GET http://localhost:4000/api/orders
+
+### Public order
+# Copy the token from qr_url in the create-order response.
+GET http://localhost:5173/o/REPLACE_TOKEN
